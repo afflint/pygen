@@ -8,7 +8,7 @@ Some datasets used for the lectures
 ### Folder <code>playground</code>
 Fast tutorial on Python data structures, lambda functions, object programming, numpy and pandas
 
-### Folder <code>game</game>
+### Folder <code>game</code>
 A simulated footbal game based on EA Fifa 2018 players data. Conceived to provide an example of object programming.
 
 ### Folder <code>analytics</code>
