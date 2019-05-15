@@ -14,3 +14,7 @@ A simulated footbal game based on EA Fifa 2018 players data. Conceived to provid
 ### Folder <code>analytics</code>
 A data analytics pipeline implemented using pandas. Takes examples from *A. Géron, "Hands-On Machine Learning With Scikit-Learn and Tensorflow: 
 Concepts, Tools, and Techniques to Build Intelligent Systems", O'Reilly, 2017.*
+
+### READING
+- <a href="https://docs.python.org/3/tutorial">Tutorial python</a>
+- <a href="https://scikit-learn.org/stable/index.html">Sklearn guide</a>
