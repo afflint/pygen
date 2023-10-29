@@ -49,6 +49,11 @@ class Deck:
             BJCard(x.symbol, x.seed) for x in
             ut.create_decks(symbols=symbols, num=num)]
 
+    @classmethod
+    def create_basic_deck(cls):
+        deck = cls(num=1)
+        return deck
+
     def shuffle(self):
         np.random.shuffle(self.deck)
 
@@ -56,7 +61,7 @@ class Deck:
     def size(self):
         return len(self.deck)
 
-    def draw(self, num: int = 1) -> List[ut.Card]:
+    def deal(self, num: int = 1) -> List[ut.Card]:
         hand = []
         for i in range(num):
             try:
