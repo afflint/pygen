@@ -1,5 +1,6 @@
 from .deck import BlackJackDeck
 from abc import abstractmethod
+import numpy as np
 
 
 class Player:
@@ -90,12 +91,12 @@ class Dealer(Player):
                 p_value = player.value_hand()
                 if self.status_in_game:
                     if p_value > d_value:
+                        self.capital -= self.bets[player.name]
                         player.capital += self.bets[player.name] * 2
-                    elif p_value == d_value:
-                        player.capital += self.bets[player.name]
                     else:
                         self.capital += self.bets[player.name]
                 else:
+                    self.capital -= self.bets[player.name]
                     player.capital += self.bets[player.name] * 2
             else:
                 self.capital += self.bets[player.name]
@@ -113,4 +114,55 @@ class Dealer(Player):
             elif 17 <= actual_value <= 21:
                 self.stay()
 
+
+class DummyPlayer(HumanPlayer):
+    def __init__(self, name: str,
+                 initial_capital: float = 100,
+                 fixed_bet: float = 5,
+                 hit_parameter: float = .5):
+        super().__init__(name, initial_capital)
+        self.fixed_bet = fixed_bet
+        self.hit_parameter = hit_parameter
+
+    def bet(self):
+        b = self.fixed_bet
+        self.capital -= b
+        return b
+
+    def play(self, deck: BlackJackDeck):
+        for i in range(1000):
+            if self.status_stay:
+                break
+            if not self.status_in_game:
+                break
+            coin = np.random.uniform(0, 1)
+            if coin < self.hit_parameter:
+                self.hit(deck)
+            else:
+                self.stay()
+
+
+class StayPlayer(HumanPlayer):
+    def __init__(self, name: str,
+                 initial_capital: float = 100,
+                 fixed_bet: float = 5):
+        super().__init__(name, initial_capital)
+        self.fixed_bet = fixed_bet
+
+    def bet(self):
+        b = self.fixed_bet
+        self.capital -= b
+        return b
+
+    def play(self, deck: BlackJackDeck):
+        for i in range(1000):
+            if self.status_stay:
+                break
+            if not self.status_in_game:
+                break
+            coin = np.random.choice([0, 1], p=[.7, .3])
+            if coin == 1:
+                self.hit(deck)
+            else:
+                self.stay()
 
