@@ -1,14 +1,14 @@
 # Intro to programming - Materiale
 
-[Recap tipi di dato e operazioni](Intro%20to%20programming%20-%20Materials/Comandi%20usati%20durante%20la%20lezione.md)
+[Recap tipi di dato e operazioni](materials/Comandi%20usati%20durante%20la%20lezione.md)
 
-[Comandi usati durante la lezione](Intro%20to%20programming%20-%20Materials/Comandi%20usati%20durante%20la%20lezione.md)
+[Comandi usati durante la lezione](materials/Comandi%20usati%20durante%20la%20lezione.md)
 
-[Esercizi](Intro%20to%20programming%20-%20Materials/Esercizi.md)
+[Esercizi](materials/Esercizi.md)
 
-[Soluzioni](Intro%20to%20programming%20-%20Materials/Soluzioni.md)
+[Soluzioni](materials/Soluzioni.md)
 
-[Riferimenti e link utili](Intro%20to%20programming%20-%20Materials/Riferimenti%20e%20link%20utili.md)
+[Riferimenti e link utili](materials/Riferimenti%20e%20link%20utili.md)
 
 # Slide usate durante la lezione
 [Slide](presentation-images.pdf)
