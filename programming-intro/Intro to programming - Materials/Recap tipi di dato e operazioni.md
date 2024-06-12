@@ -51,13 +51,9 @@ Le operazioni che possiamo eseguire con i dati dipendono dal tipo dei dati stess
 
 | Operatore | Descrizione | Esempio |
 | --- | --- | --- |
-| and | True se entrambi gli operandi sono True | True and True -> True
-True and False -> False |
-| or | True se almeno uno degli operandi è True | True and False -> True
-False and False -> False |
-| not | True se l’operando è False
-False se l’operando è True | not False -> True
-not True -> False |
+| and | True se entrambi gli operandi sono True | True and True -> True, True and False -> False |
+| or | True se almeno uno degli operandi è True | True and False -> True, False and False -> False |
+| not | True se l’operando è False, False se l’operando è True | not False -> True, not True -> False |
 
 Curiosità: ogni tipo di dato può essere codificato come `True` o `False`. Ad esempio:
 
