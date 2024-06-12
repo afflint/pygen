@@ -15,7 +15,7 @@
     -  Debugging con PyCharm
     -  Jupyter
 
-# Intro to programming - Materiale
+# Materiale
 
 [Recap tipi di dato e operazioni](materials/Comandi%20usati%20durante%20la%20lezione.md)
 
