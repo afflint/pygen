@@ -17,3 +17,7 @@
 [Soluzioni](materials/soluzioni.md)
 
 [Riferimenti e link utili](materials/riferimenti-links.md)
+
+# Slide usate durante questa lezione
+
+[Slide](presentazione.pdf)
