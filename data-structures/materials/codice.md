@@ -22,7 +22,6 @@ def stampa_collezione():
     stampa_dettagli_libro(libro2)
     stampa_dettagli_libro(libro3)
     stampa_dettagli_libro(libro4)
-    print(f"Totale libri: {numero_libri}")
 ```
 
 # main.py versione 0
@@ -155,7 +154,7 @@ def aggiungi_libro(titolo, autore, anno, genere, prezzo, quantita):
 - La struttura e la logica rimangono sostanzialmente invariate rispetto alla versione precedente, ma è stata aggiornata per utilizzare la lista `collezione` come argomento nella funzione `stampa_collezione`.
 
 ```python
-# registro.py v3
+# registro.py v4
 
 libro1 = list(("Il nome della rosa", "Umberto Eco", 1980, "Romanzo Storico", 20.00, 5))
 libro2 = list(("1984", "George Orwell", 1949, "Distopico", 15.00, 10))
