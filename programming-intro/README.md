@@ -2,7 +2,7 @@
 
 -  Principi della programmazione
 -  Codifica dell'informazione e tipi di dato
--  Inteprete Python e PYTHONPATH
+-  Inteprete Python
 -  Variabili e tipizzazione dinamica
 -  Programmazione modulare
     -  Funzioni
